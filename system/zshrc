@@ -1,0 +1,52 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+ENABLE_CORRECTION="true"
+
+## Powerlevel9k options
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_left"
+POWERLEVEL9K_STATUS_SHOW_PIPESTATUS="true"
+POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  context
+  dir
+  dir_writable
+  vcs
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status
+  aws
+  virtualenv
+  anaconda
+  command_execution_time
+)
+
+
+plugins=(
+  # git
+  docker-compose
+  mvn
+  gradle
+  python
+  pip
+  virtaulenv
+  virtualenvwrapper
+  zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+source ~/.fonts/*.sh
+
+# IntelliJ IDEA inotify fix
+sudo sysctl fs.inotify.max_user_watches=32768 >> /dev/null 2>&1
+
+# Aliases

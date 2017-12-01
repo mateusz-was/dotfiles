@@ -1,0 +1,34 @@
+mkcd() { mkdir -p $1 && cd $1 }
+alias ls='ls -GFhlv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias mkdir='mkdir -pv'
+alias ll='ls -GFhlvA'
+alias less='less -FSRXc'
+# Always list directory contents upon 'cd'
+cd() { builtin cd "$@"; ll; }
+
+# Directory jumps
+alias cd..='cd ../'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+alias .6='cd ../../../../../../'
+
+# Show all paths in $PATH env var
+alias path='echo -e ${PATH//:/\\n}'
+
+# Edit /etc/hosts
+alias hosts="sudo $EDITOR /etc/hosts"
+
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
