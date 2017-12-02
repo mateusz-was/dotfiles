@@ -14,8 +14,7 @@ fi
 echo "### Install zsh: End ###"
 
 echo "### Install oh-my-zsh: Start ###"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-rm ~/.zshrc.pre-oh-my-zsh
+./oh-my-zsh.sh
 echo "### Install oh-my-zsh: End ###"
 
 echo "Add powerline9k theme to oh-my-zsh"
