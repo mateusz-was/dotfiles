@@ -2,7 +2,7 @@ echo "### Install zsh: Start ###"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   sudo apt update
-  sudo apt install -y zsh #powerline power-fonts
+  sudo apt install -y zsh powerline fonts-powerline
   set +x
 fi
 if (cat /etc/os-release | grep -qi centos); then
@@ -25,8 +25,8 @@ echo "Add zsh shell highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 echo "Install Nerd-fonts"
-git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
-~/.nerd-fonts/install.sh
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
+~/.nerd-fonts/install.sh Meslo
 
 echo "Copy zshrc settings"
 cp ~/dotfiles/system/zshrc ~/.zshrc
