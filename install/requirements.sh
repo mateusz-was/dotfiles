@@ -1,9 +1,8 @@
 echo "### Install Git: Start ###"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
-  sudo add-apt-repository -y ppa:git-core/ppa
-  sudo apt-get update
-  sudo apt-get install -y git
+  sudo apt update
+  sudo apt get -y curl git
   set +x
 fi
 if (cat /etc/os-release | grep -qi centos); then

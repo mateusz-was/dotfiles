@@ -29,7 +29,7 @@ git clone https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 ~/.nerd-fonts/install.sh
 
 echo "Copy zshrc settings"
-cp ../system/zshrc ~/.zshrc
+cp ~/dotfiles/ystem/zshrc ~/.zshrc
 
 echo "### Change shell to zsh ###"
 sudo chsh -s /bin/zsh
