@@ -7,3 +7,11 @@ chmod +x install/* system/sudoers install.sh
 # Install packages
 ./install/git.sh
 ./install/zsh.sh
+
+./install/ansible.sh
+./install/atom.sh
+./install/aws.sh
+./install/docker.sh
+./install/sdkman.sh
+
+# TODO Add git configs
