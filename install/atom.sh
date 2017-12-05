@@ -1,4 +1,4 @@
-echo "### Install atom: Start ###"
+echo "\033[0;32m### Install atom: Start ###\033[0m"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   sudo apt-get install -y atom
@@ -9,4 +9,4 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum install -y atom
   set +x
 fi
-echo "### Install atom: End ###"
+echo "\033[0;32m### Install atom: End ###\033[0m"

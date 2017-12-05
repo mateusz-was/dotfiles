@@ -1,4 +1,4 @@
-echo "### Install Ansible: Start ###"
+echo "\033[0;32m### Install Ansible: Start ###\033[0m"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   sudo apt-get update
@@ -14,4 +14,4 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum install -y ansible
   set +x
 fi
-echo "### Install Ansible: End ###"
+echo "\033[0;32m### Install Ansible: End ###\033[0m"

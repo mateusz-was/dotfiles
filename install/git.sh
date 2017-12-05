@@ -1,4 +1,4 @@
-echo "### Install Git: Start ###"
+echo "\033[0;32m### Install Git: Start ###\033[0m"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   sudo add-apt-repository -y ppa:git-core/ppa
@@ -10,4 +10,4 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum update
   sudo yum install -y git
 fi
-echo "### Install Git: End ###"
+echo "\033[0;32m### Install Git: End ###\033[0m"

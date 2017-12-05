@@ -1,4 +1,4 @@
-echo "### Install zsh: Start ###"
+echo "\033[0;32m### Install zsh: Start ###\033[0m"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   sudo apt update
@@ -11,11 +11,11 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum install -y zsh
   set +x
 fi
-echo "### Install zsh: End ###"
+echo "\033[0;32m### Install zsh: End ###\033[0m"
 
-echo "### Install oh-my-zsh: Start ###"
+echo "\033[0;32m### Install oh-my-zsh: Start ###\033[0m"
 ~/dotfiles/install/oh-my-zsh.sh
-echo "### Install oh-my-zsh: End ###"
+echo "\033[0;32m### Install oh-my-zsh: End ###\033[0m"
 
 echo "Add powerline9k theme to oh-my-zsh"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
@@ -30,5 +30,5 @@ git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 echo "Copy zshrc settings"
 cp ~/dotfiles/system/zshrc ~/.zshrc
 
-echo "### Change shell to zsh ###"
+echo "\033[0;32m### Change shell to zsh ###\033[0m"
 sudo chsh -s /bin/zsh

@@ -33,17 +33,22 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
 
 plugins=(
   # git
+  # docker
   docker-compose
   mvn
   gradle
   python
   pip
   virtaulenv
-  virtualenvwrapper
+  # virtualenvwrapper
   zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
+source ~/dotfiles/system/aliases
+source ~/dotfiles/system/colors
+source ~/dotfiles/system/env
+source ~/dotfiles/system/functions
 
 # IntelliJ IDEA inotify fix
 sudo sysctl fs.inotify.max_user_watches=32768 >> /dev/null 2>&1

@@ -1,4 +1,4 @@
-echo "### Install Docker: Start ###"
+echo "\033[0;32m### Install Docker: Start ###\033[0m"
 if (cat /etc/os-release | grep -qi ubuntu); then
   set -x
   # Remove previous Docker packages
@@ -22,17 +22,17 @@ if (cat /etc/os-release | grep -qi ubuntu); then
   sudo systemctl enable docker
   set +x
 fi
-echo "### Install Docker: End ###"
+echo "\033[0;32m### Install Docker: End ###\033[0m"
 
-echo "### Install Docker-compose: Start"
+echo "\033[0;32m### Install Docker-compose: Start"
   sudo pip install -y docker-compose
-echo "### Install Docker-compose: End"
+echo "\033[0;32m### Install Docker-compose: End"
 
-echo "### Install Docker-compose completion: Start"
+echo "\033[0;32m### Install Docker-compose completion: Start"
 if (echo $SHELL | grep -qi bash); then
   sudo curl -L https://raw.githubusercontent.com/docker/compose/1.17.0/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 fi
 if (echo $SHELL | grep -qi zsh); then
   curl -L https://raw.githubusercontent.com/docker/compose/1.17.0/contrib/completion/zsh/_docker-compose > ~/.oh-my-zsh/plugins/docker-compose/_docker-compose
 fi
-echo "### Install Docker-compose completion: End"
+echo "\033[0;32m### Install Docker-compose completion: End"
