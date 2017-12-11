@@ -32,6 +32,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
 
 
 plugins=(
+  aws
   # git
   # docker
   docker-compose
