@@ -10,4 +10,8 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum update
   sudo yum install -y git
 fi
+
+cp ~/dotfiles/git/gitconfig ~/.config/git/config
+cp ~/dotfiles/git/gitignore ~/.config/git/ignore
+
 echo "\033[0;32m### Install Git: End ###\033[0m"
