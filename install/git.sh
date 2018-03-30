@@ -11,6 +11,7 @@ if (cat /etc/os-release | grep -qi centos); then
   sudo yum install -y git
 fi
 
+mkdir -p ~/.config/git
 cp ~/dotfiles/git/gitconfig ~/.config/git/config
 cp ~/dotfiles/git/gitignore ~/.config/git/ignore
 
