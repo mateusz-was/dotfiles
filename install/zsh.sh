@@ -31,4 +31,4 @@ echo "Copy zshrc settings"
 cp ./system/zshrc ~/.zshrc
 
 echo "\033[0;32m### Change shell to zsh ###\033[0m"
-sudo chsh -s /bin/zsh
+sudo chsh -s /usr/bin/zsh

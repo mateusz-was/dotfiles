@@ -1,4 +1,5 @@
 set -ex
+cp ./system/* ~/dotfiles/system
 chmod +x install/* system/sudoers install.sh
 # Verify that your user will be able to do all the sudo actions
 ./system/sudoers
