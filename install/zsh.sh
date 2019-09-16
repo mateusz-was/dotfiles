@@ -28,7 +28,7 @@ git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd-fonts
 ~/.nerd-fonts/install.sh Meslo
 
 echo "Copy zshrc settings"
-cp ~/dotfiles/system/zshrc ~/.zshrc
+cp ../system/zshrc ~/.zshrc
 
 echo "\033[0;32m### Change shell to zsh ###\033[0m"
 sudo chsh -s /bin/zsh
