@@ -14,5 +14,6 @@ chmod +x install/* system/sudoers install.sh
 ./install/aws.sh
 ./install/docker.sh
 ./install/sdkman.sh
+./install/ide.sh
 
 set +ex
