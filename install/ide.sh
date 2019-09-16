@@ -5,6 +5,8 @@ packages=("curl" "git" "python-pip")
 if (cat /etc/os-release | grep -qi ubuntu); then
   sudo snap install -y --classic code
   sudo snap install -y --classic intellij-idea-ultimate
+  # Fix annoying Alt+` behaviour in Ubuntu 
+  gsettings set org.gnome.desktop.wm.keybindings switch-group "['disabled']"
 fi
 if (cat /etc/os-release | grep -qi centos); then
   echo "NOT DONE YET"
