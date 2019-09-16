@@ -12,7 +12,7 @@ if (cat /etc/os-release | grep -qi centos); then
 fi
 
 mkdir -p ~/.config/git
-cp ~/dotfiles/git/gitconfig ~/.config/git/config
-cp ~/dotfiles/git/gitignore ~/.config/git/ignore
+cp ./git/gitconfig ~/.config/git/config
+cp ./git/gitignore ~/.config/git/ignore
 
 echo "\033[0;32m### Install Git: End ###\033[0m"
