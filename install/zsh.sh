@@ -14,7 +14,7 @@ fi
 echo "\033[0;32m### Install zsh: End ###\033[0m"
 
 echo "\033[0;32m### Install oh-my-zsh: Start ###\033[0m"
-~/dotfiles/install/oh-my-zsh.sh
+./install/oh-my-zsh.sh
 echo "\033[0;32m### Install oh-my-zsh: End ###\033[0m"
 
 echo "Add powerline9k theme to oh-my-zsh"
