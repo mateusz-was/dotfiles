@@ -1,9 +1,9 @@
 mkcd() { mkdir -p $1 && cd $1 }
-alias ls='ls -GFhlv'
+alias ls='ls -GFhlv --color=auto'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
-alias ll='ls -GFhlvA'
+alias ll='ls -GFhlvA --color=auto'
 alias less='less -FSRXc'
 # Always list directory contents upon 'cd'
 cd() { builtin cd "$@"; ll; }
